@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{% block title %} | List {% endblock %}
+ 
+{% block all-post %}
+    {% for p in posts %}
+        <a href="{% url 'blogger:detail' p.id %}"> {{p.title}}</a>
+        <hr />
+
+    {% empty %}
+        <P>No post</P>
+    {% endfor %}
+{% endblock %}
+
+{% block published-post %}
+    {% for post in published %}
+     <a href="#"> {{post.title}}</a>
+     <hr />
+     {% empty %}
+        <p>No post available</p>
+    {% endfor %}
+{% endblock %}

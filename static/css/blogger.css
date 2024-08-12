@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    color: black;
+}
+
+body a{
+    text-decoration: none;
+    
+}
+
+.nav{
+    padding: 1rem 2rem;
+    background-color: #eee;
+}
+.nav a{
+    font-weight: 900;
+    font-size: 2rem;
+
+}
+#body-content{
+    display: flex;
+    justify-content: space-around;
+
+}
