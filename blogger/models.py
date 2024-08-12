@@ -2,6 +2,18 @@ from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
 
+
+
+class PostManager(models.Manager):
+    def get_queryset(self):
+        return super().get_queryset().filter(status='DF')
+    
+
+class ActivePostManager(models.Manager):
+    def all(self):
+        return self.get_queryset().filter(status='PB')
+
+
 class Post(models.Model):
     class Status(models.TextChoices):
         DRAFT = 'DF', 'Draft'
@@ -15,6 +27,8 @@ class Post(models.Model):
     updated = models.DateTimeField(auto_now=True)
     status = models.CharField(max_length=2, choices=Status.choices, default=Status.DRAFT)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='blog_posts')
+    objects = PostManager()
+    active = ActivePostManager()
 
     class Meta:
         ordering = ['-publish']
