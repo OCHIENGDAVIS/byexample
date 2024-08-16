@@ -3,8 +3,12 @@
  
 {% block all-post %}
     {% for p in posts %}
-        <a href="{% url 'blogger:detail' p.id %}"> {{p.title}}</a>
-        <hr />
+    <div>
+        <a href="{{p.get_absolute_url}}"> {{p.title}}</a> <br />
+        <small> Publsihed {{p.published}} by {{p.author}}</small>
+
+    </div>
+    <hr />
 
     {% empty %}
         <P>No post</P>
@@ -13,9 +17,12 @@
 
 {% block published-post %}
     {% for post in published %}
-     <a href="#"> {{post.title}}</a>
+     <a href="{{post.get_absolute_url}}"> {{post.title}}</a>
      <hr />
      {% empty %}
         <p>No post available</p>
     {% endfor %}
+    <div>
+        {% include "../commons/pagination.html" with page=posts %}
+    </div>
 {% endblock %}
