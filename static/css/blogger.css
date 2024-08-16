@@ -1,29 +1,36 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: sans-serif;
     color: black;
 }
 
-body a{
+body a {
     text-decoration: none;
-    
+
 }
 
-.nav{
+.nav {
     padding: 1rem 2rem;
     background-color: #eee;
 }
-.nav a{
+
+.nav a {
     font-weight: 900;
     font-size: 2rem;
 
 }
-#body-content{
+
+#body-content {
     display: flex;
     justify-content: space-around;
 
+}
+
+.errorlist {
+    color: red;
 }
