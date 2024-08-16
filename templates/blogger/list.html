@@ -1,28 +1,28 @@
 {% extends 'base.html'%}
 {% block title %} | List {% endblock %}
- 
+
 {% block all-post %}
-    {% for p in posts %}
-    <div>
-        <a href="{{p.get_absolute_url}}"> {{p.title}}</a> <br />
-        <small> Publsihed {{p.published}} by {{p.author}}</small>
+{% for p in posts %}
+<div>
+    <a href="{{p.get_absolute_url}}"> {{p.title}}</a> <br/>
+    <small> Publsihed {{p.published}} by {{p.author}}</small>
 
-    </div>
-    <hr />
+</div>
+<hr/>
 
-    {% empty %}
-        <P>No post</P>
-    {% endfor %}
+{% empty %}
+<P>No post</P>
+{% endfor %}
 {% endblock %}
 
 {% block published-post %}
-    {% for post in published %}
-     <a href="{{post.get_absolute_url}}"> {{post.title}}</a>
-     <hr />
-     {% empty %}
-        <p>No post available</p>
-    {% endfor %}
-    <div>
-        {% include "../commons/pagination.html" with page=posts %}
-    </div>
+{% for post in published %}
+<a href="{{post.get_absolute_url}}"> {{post.title}}</a>
+<hr/>
+{% empty %}
+<p>No post available</p>
+{% endfor %}
+<div>
+    {% include "../commons/pagination.html" with page=page_obj %}
+</div>
 {% endblock %}

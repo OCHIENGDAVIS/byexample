@@ -1,5 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator, EmptyPage
+from django.views.generic import ListView
+
 from .models import Post
 
 
@@ -21,3 +23,11 @@ def post_detail(request, year, month, day, post):
     post = get_object_or_404(Post, publish__year=year, publish__month=month, publish__day=day, slug=post)
     ctx['post'] = post
     return render(request, 'blogger/detail.html', context=ctx)
+
+
+class PostListView(ListView):
+    """Alternative Post list view"""
+    queryset = Post.objects.all()
+    context_object_name = 'posts'
+    paginate_by = 3
+    template_name = 'blogger/list.html'
