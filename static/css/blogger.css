@@ -3,34 +3,130 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+
+}
 
 body {
     font-family: sans-serif;
-    color: black;
+    color: #1D3557;
+    background-color: #F1FAEE;
 }
 
-body a {
+a:link,a:visited, a:hover, a:active{
     text-decoration: none;
+    color: #1D3557;
 
 }
-
+button, input[type='button'], input[type='submit'] {
+    color: #1D3557;
+    padding: 0.5rem 1rem;
+    background-color: #E63946;
+    border: none;
+    cursor: pointer;
+}
+ul {
+    list-style-type: none;
+}
 .nav {
     padding: 1rem 2rem;
-    background-color: #eee;
+    background-color: #1D3557;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+   
+    
 }
 
-.nav a {
+.nav>a {
     font-weight: 900;
     font-size: 2rem;
+    color: #fff;
+   
+    
 
 }
-
-#body-content {
+ 
+ .container{
+    width: 80%;
+    margin: 0 auto;
+ }
+.body_content{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    gap: 2rem;
+    /* padding: 1.5rem; */
+}
+
+.main_content{
 
 }
+
 
 .errorlist {
     color: red;
+}
+
+input{
+    border: none;
+}
+
+
+.sidebar{
+    min-width: 30%;
+    background-color: #fff;
+    margin-top: 1rem;
+    align-self: flex-start;
+}
+.sidebar_header{
+    text-align: center;
+    margin-bottom: 1rem;
+    background-color: #1D3557;
+    color: #fff;
+   
+}
+.sidebar_title{
+    padding: 0.5rem 0;
+}
+.sidebar_body_post_count {
+   font-size: 1.5rem;
+   padding-bottom: 1rem;
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+
+}
+.lastest_post_header_container{
+    text-align: center;
+    background-color: #1D3557;
+    color: #fff;
+    margin-top: 1.5rem;
+}
+.sidebar_latest_post{
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+
+.latest_posts_listitems{
+
+}
+.latest_posts_listitem{
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid #1D3557;
+    cursor: pointer;
+}
+
+.most_commented_header{
+    text-align: center;
+    color: #fff;
+    background-color: #1D3557;
+    padding: 0.5rem 0;
+}
+.most_comment_body{
+    padding: 0.5rem;
+    display: block;
+    border-bottom: 1px solid #1D3557;
 }

@@ -1,14 +1,27 @@
 {% extends 'base.html'%}
+{% load static %}
+
 {% block title %} | List {% endblock %}
 
-{% block all-post %}
+{% block style %}
+<link href="{% static 'css/post_list.css' %}" rel="stylesheet" />
+{% endblock %}
+{% block all_posts %}
 {% for p in posts %}
-<div>
-    <a href="{{p.get_absolute_url}}"> {{p.title}}</a> <br/>
-    <small> Publsihed {{p.published}} by {{p.author}}</small>
+<div class="post_list">
+    <a class="post_title" href="{{p.get_absolute_url}}"> {{p.title}}</a> 
+    <small class="post_tag">
+        sometag
+        
+    </small>
+    <div class="post_list_detail">
+        <p> Published {{p.published}} by <small class="post_author">{{p.author}}</small> </p> 
+        <a class="post_list_comment" href="{{p.get_absolute_url}}">{{p.comments.count}} Comments</a>
+        <p>{{p.created|timesince}} ago</p>
+    </div>
 
 </div>
-<hr/>
+
 
 {% empty %}
 <P>No post</P>

@@ -6,6 +6,21 @@
 <h1> {{post.title}}</h1>
 <p>{{post.body}}</p>
 <div>
-    <a href="{% url 'blogger:post_share' post.id %}">Share this Post</a>
+    <a href="{% url 'blogger:post_share' post.id %}">share this post</a> | <a
+        href="{% url 'blogger:post_comment' post.id %}"> add a comment </a>
+</div>
+<div>
+    <h3>Comments </h3>
+    {% for comment in post.comments.all%}
+    <div>
+        <a href="{% url 'blogger:comment_detail' post.id comment.id %}">{{comment.body|truncatechars:50}} </a> <br/>
+        <small>Comment by {{comment.name}} on {{comment.created}}</small>
+        <hr/>
+    </div>
+
+    {% empty %}
+    <p>No Comment for this post</p>
+    {% endfor %}
+
 </div>
 {% endblock %}

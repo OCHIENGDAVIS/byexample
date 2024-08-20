@@ -1,3 +1,5 @@
+
+{% load blog_tags %}
 {% load static %}
 
 <!DOCTYPE html>
@@ -6,31 +8,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Blogger | {% block title %} {% endblock %}</title>
+    <link  href="{% static 'css/blogger.css' %}" rel="stylesheet"/>
     {% block style %} 
     {% endblock %}
-    <link  href="{% static 'css/blogger.css' %}" rel="stylesheet"/>
+    
 </head>
 <body>
-    <nav class="nav">
-        <a href="{% url 'blogger:list' %}">Blogger</a>
-    </nav>
-    <div id="body-content">
-        <div id="content">
-            {% block all-post %}
-           
-            {% endblock %}
     
-            {% block published-post %}
+        <nav class="nav">
+            <a href="{% url 'blogger:list' %}">Blogger</a>
+            
+        </nav>
+        <div class="container">
+        <div class="body_content">
+            <div class="main_content">
+                {% block all_posts %}
+               
+                {% endblock %}
+        
+            </div>
+            <div class="sidebar">
+                <div class="sidebar_header">
+                    <h2 class="sidebar_title">My Blog</h2>
+                </div>
+                <div class="sidebar_body">
+                    <p class="sidebar_body_post_count">I have written {% total_posts %} posts so far </p>
+                    <div class="lastest_post_header_container">
+                        <h2 class="sidebar_latest_post"> Latest Posts </h2>
+                    </div>
+                    {% show_latest_posts %} 
+                    <div class="most_commented_header">
+                        <h2>Most Commented Posts</h2>
+                    </div>
+                    {% most_commented_posts as most_commented %}
+                    {% for post in most_commented  %}
+                    <a class="most_comment_body" href="{{post.get_absolute_url}}">{{post.title|truncatechars:50}}</a>
+                    {% endfor %}
+                    
+                </div>
                 
-            {% endblock %}
-    
-        </div>
-        <div id="sidebar">
-            <h2>My Blog</h2>
-            <p>This is my blog</p>
-        </div>
+               
+            </div>
 
-    </div>
+        </div>
+        </div>
     
 </body>
 </html>
+

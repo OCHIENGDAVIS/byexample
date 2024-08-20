@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block title %}Share {% endblock %}
-{% block all-post %}
+{% block all_posts %}
 <div>
     <form method="POST" novalidate> {% csrf_token %}
         {{form.as_p}}

@@ -1,0 +1,13 @@
+
+
+<div>
+    <ul class="latest_posts_listitems">
+        {% for post in latest_posts %}
+            <li class="latest_posts_listitem">
+                <a href="{{post.get_absolute_url}}">{{post.title|truncatechars:50}}</a>
+            </li>
+        {% endfor %}
+        
+    </ul>
+    
+</div>

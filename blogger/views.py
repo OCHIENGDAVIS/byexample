@@ -4,20 +4,26 @@ from django.views.generic import ListView
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 
-from .models import Post
-from .forms import EmailPostForm
+
+from taggit.models import Tag
+
+from .models import Post, Comment
+from .forms import EmailPostForm, CommentForm
 
 
-def post_list(request):
-    all_published_post = Post.active.all()
+def post_list(request, tag_slug=None):
     all_posts = Post.objects.all()
-    paginator = Paginator(all_posts, 3)
+    tag = None 
+    if tag_slug:
+        tag= get_object_or_404(Tag, slug=tag_slug)
+        all_posts = all_posts.filter(tags__in=[tag])
+    paginator = Paginator(all_posts, 6)
     page_number = request.GET.get('page', 1)
     try:
         all_posts = paginator.page(page_number)
     except EmptyPage:
         all_posts = paginator.page(paginator.num_pages)
-    ctx = {'published': all_published_post, 'posts': all_posts}
+    ctx = { 'posts': all_posts}
     return render(request, 'blogger/list.html', context=ctx)
 
 
@@ -49,3 +55,25 @@ def post_share(request, post_id):
         form = EmailPostForm()
     ctx = {'form': form}
     return render(request, 'blogger/share.html', context=ctx)
+
+
+def post_comment(request, post_id):
+    post = get_object_or_404(Post, id=post_id)
+    comment = None
+    form = CommentForm(request.POST or None)
+    if form.is_valid():
+        comment = form.save(commit=False)
+        comment.post = post
+        comment.save()
+        print('the forms just got saved')
+        return HttpResponseRedirect(reverse('blogger:list'))
+    ctx = {'post': post, 'form': form, 'comment': comment}
+    print(ctx)
+    return render(request, 'blogger/comment.html', context=ctx)
+
+
+def comment_detail(request, post_id, comment_id):
+    post = get_object_or_404(Post, id=post_id)
+    comment = get_object_or_404(Comment, post=post, id=comment_id)
+    ctx = {'post': post, 'comment': comment}
+    return render(request, 'blogger/comment_detail.html', context=ctx)

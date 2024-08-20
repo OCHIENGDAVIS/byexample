@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %} Comment Detail {% endblock %}
+
+{% block all_posts %}
+<div>
+    <h1>{{post.title}}</h1>
+    <hr/>
+    <p>{{comment.body}}</p>
+    <small>Created by {{comment.name}} on {{comment.created}}</small>
+
+</div>
+{% endblock %}

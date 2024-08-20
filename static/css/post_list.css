@@ -1,0 +1,35 @@
+.post_list{
+    background-color: #fff;
+    margin: 1rem 0;
+    padding: 1.5rem 1rem;
+}
+.post_title{
+    margin-bottom: 0.8rem;
+    display: block;
+    font-size: 1.5rem;
+    color: #1D3557;
+}
+.post_tag{
+    display: inlne-block;
+    color: #E63946;
+    background-color: #1D3557;
+    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    color: #ffffff;
+}
+.post_list_detail{
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+.post_list_detail a{
+    color: #E63946
+}
+.post_author{
+    font-weight: 900;
+}
+.post_list_comment{
+    flex-grow: 1;
+}
