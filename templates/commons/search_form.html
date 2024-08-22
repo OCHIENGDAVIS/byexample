@@ -1,0 +1,6 @@
+<div class="nav_form">
+    <form method="GET" action="{% url 'blogger:post_search' %}"> {% csrf_token %}
+        <input type="text" placeholder="Search blogs ..." name="query" />
+        <input type="submit" value="Search" />
+    </form>
+</div>

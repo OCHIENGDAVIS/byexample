@@ -3,9 +3,12 @@
 <div>
     <ul class="latest_posts_listitems">
         {% for post in latest_posts %}
-            <li class="latest_posts_listitem">
+            <div class="latest_posts_listitem">
                 <a href="{{post.get_absolute_url}}">{{post.title|truncatechars:50}}</a>
-            </li>
+                <div class="date">
+                    {{post.created|timesince}} ago
+                </div>
+            </div>
         {% endfor %}
         
     </ul>

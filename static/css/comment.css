@@ -1,0 +1,47 @@
+.post_to_comment{
+    margin: 2rem 0;
+}
+code {
+    font-size: 2rem;
+}
+.comment_form_title{
+    margin-bottom: 1rem;
+}
+.comment_form_container{
+    width: 100%;
+}
+
+label{
+    font-weight: 600;
+    display: block;
+    margin-top: 1.5rem;
+}
+
+input:not([type="submit"]){
+    padding: 0.5rem;
+    width: 80%;
+    color: #1D3557;
+    font-size: 1rem;
+
+}
+
+input[type="submit"]{
+    color: #fff;
+    background-color: #1D3557;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+input[type="submit"]:hover{
+    background-color: #105ac2;
+    transition: ease-in;
+}
+
+
+#id_body{
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    color: #1D3557;
+    font-size: 1rem;
+}

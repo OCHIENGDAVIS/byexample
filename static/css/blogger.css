@@ -11,6 +11,7 @@ body {
     font-family: sans-serif;
     color: #1D3557;
     background-color: #F1FAEE;
+    line-height: 1.6;
 }
 
 a:link,a:visited, a:hover, a:active{
@@ -18,12 +19,27 @@ a:link,a:visited, a:hover, a:active{
     color: #1D3557;
 
 }
+a:hover{
+    color: #105ac2;
+    animation: ease-in;
+}
 button, input[type='button'], input[type='submit'] {
     color: #1D3557;
     padding: 0.5rem 1rem;
     background-color: #E63946;
     border: none;
     cursor: pointer;
+}
+input[type="text"]{
+    color: #1D3557;
+    font-size: 0.8rem;
+}
+input:focus{
+    border: none;
+    outline: none;
+}
+input::placeholder{
+    font-size: 1rem;
 }
 ul {
     list-style-type: none;
@@ -34,18 +50,40 @@ ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
-   
-    
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
-
+.nav_form{
+    
+    flex-basis: 70%;
+    flex-shrink: 1;
+}
 .nav>a {
     font-weight: 900;
     font-size: 2rem;
     color: #fff;
-   
-    
+}
 
+.nav_form form{
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav_form input[type="text"]{
+    padding: 1rem 0.5rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    width: 80%;
+}
+.nav_form input[type="submit"]{
+    color: #fff;
+    font-weight: 600;
+    padding: 1rem 0.5rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 15%;
 }
  
  .container{
@@ -61,9 +99,9 @@ ul {
 }
 
 .main_content{
+    flex-grow: 1;
 
 }
-
 
 .errorlist {
     color: red;
@@ -75,10 +113,11 @@ input{
 
 
 .sidebar{
-    min-width: 30%;
+    max-width: 40%;
     background-color: #fff;
     margin-top: 1rem;
     align-self: flex-start;
+    
 }
 .sidebar_header{
     text-align: center;
@@ -91,7 +130,7 @@ input{
     padding: 0.5rem 0;
 }
 .sidebar_body_post_count {
-   font-size: 1.5rem;
+   font-size: 1rem;
    padding-bottom: 1rem;
    padding-left: 0.5rem;
    padding-right: 0.5rem;
@@ -104,7 +143,7 @@ input{
     margin-top: 1.5rem;
 }
 .sidebar_latest_post{
-    font-size: 1.5rem;
+
     padding: 0.5rem 0;
 }
 
@@ -118,15 +157,50 @@ input{
     border-bottom: 1px solid #1D3557;
     cursor: pointer;
 }
-
+.date{
+    color: #E63946;
+    font-size: 0.8rem;
+}
 .most_commented_header{
     text-align: center;
     color: #fff;
     background-color: #1D3557;
     padding: 0.5rem 0;
+    margin-bottom: 1rem;
 }
 .most_comment_body{
     padding: 0.5rem;
     display: block;
     border-bottom: 1px solid #1D3557;
+}
+
+.most_commented{
+    margin: 1rem ;
+    border-bottom: 1px solid #1D3557;
+}
+.most_commented_detials{
+    color: #E63946;
+    font-size: 0.8rem;
+}
+.most_commented_detials span{
+    font-weight: 600;
+}
+.footer{
+    background-color: #1D3557;
+    padding: 2rem 0;
+    
+    width:100%;
+    margin-top: 3rem;
+    
+}
+
+
+.footer_list{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+   
+}
+.footer_list li a{
+    color: #fff;
 }

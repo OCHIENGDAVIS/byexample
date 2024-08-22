@@ -1,0 +1,25 @@
+.post_title{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.post_body{
+    line-height: 1.9;
+    font-size: 1.2rem;
+}
+.post_share{
+    margin-top: 1rem;
+}
+.post_share a{
+    color: #E63946;
+    font-size: 1.2rem;
+}
+
+.post_comment{
+    margin-top: 3rem;
+}
+.post_comment_title{
+    font-size: 2rem;
+}
+.author{
+    color: #E63946;
+}

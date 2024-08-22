@@ -11,13 +11,12 @@
     <link  href="{% static 'css/blogger.css' %}" rel="stylesheet"/>
     {% block style %} 
     {% endblock %}
-    
 </head>
 <body>
     
         <nav class="nav">
             <a href="{% url 'blogger:list' %}">Blogger</a>
-            
+           {% include './commons/search_form.html' with form=form %}
         </nav>
         <div class="container">
         <div class="body_content">
@@ -29,29 +28,45 @@
             </div>
             <div class="sidebar">
                 <div class="sidebar_header">
-                    <h2 class="sidebar_title">My Blog</h2>
+                    <h4 class="sidebar_title">My Blog</h4>
                 </div>
                 <div class="sidebar_body">
                     <p class="sidebar_body_post_count">I have written {% total_posts %} posts so far </p>
                     <div class="lastest_post_header_container">
-                        <h2 class="sidebar_latest_post"> Latest Posts </h2>
+                        <h4 class="sidebar_latest_post"> Latest Posts </h4>
                     </div>
                     {% show_latest_posts %} 
                     <div class="most_commented_header">
-                        <h2>Most Commented Posts</h2>
+                        <h4>Most Commented Posts</h4>
                     </div>
                     {% most_commented_posts as most_commented %}
                     {% for post in most_commented  %}
-                    <a class="most_comment_body" href="{{post.get_absolute_url}}">{{post.title|truncatechars:50}}</a>
+                    <div class="most_commented">
+                        <a   href="{{post.get_absolute_url}}">{{post.title|truncatechars:50}}</a>
+                        <div class="most_commented_detials">
+                            <p> By <span>{{post.author}} </span>on {{post.created}}</p>
+                        </div>
+                    </div>
+                    
                     {% endfor %}
                     
                 </div>
-                
-               
             </div>
 
         </div>
         </div>
+        <footer class="footer">
+            <div>
+                <ul class="footer_list">
+                    <li>
+                        <a href="">Terms of Service </a>
+                    </li>
+                    <li>
+                        <a href="">Privacy Policy </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     
 </body>
 </html>

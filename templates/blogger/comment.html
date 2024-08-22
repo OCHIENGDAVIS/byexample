@@ -1,6 +1,11 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %} Comment
+{% endblock %}
+
+{% block style %} 
+ <link rel="stylesheet" href="{% static 'css/comment.css' %}"
 {% endblock %}
 
 {% block all_posts %}
@@ -9,7 +14,8 @@
 <h2>Your comment has been added</h2>
 <p><a href="{{post.get_absolute_url}}">Back to the post</a></p>
 {% else %}
-<p>{{post.title}}</p>
+
+<p class="post_to_comment"> <code>"{{post.title}}"</code></p>
 {% include '../commons/comment_form.html' %}
 {% endif %}
 

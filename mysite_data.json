@@ -1,0 +1,929 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2024-08-12T11:29:24.306Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Njura | Memory Beta, non-canon Star Trek Wiki | Fandom",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2024-08-16T08:12:49.167Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Mastery (book)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2024-08-16T08:13:33.968Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Origins book",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2024-08-16T08:14:13.790Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Synopsis book",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2024-08-16T08:14:55.498Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Work Experience",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2024-08-16T08:15:33.978Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Focus on achievements and impact, rather than just listing job responsibilities Quantify results wherever possible (e.g., “Improved data processing time by 30%”) Highlight collaboration, problem-solvi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2024-08-20T07:58:14.457Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Adding full-text search to the blog",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2024-08-20T08:00:26.580Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "Installation",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2024-08-20T10:04:02.081Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Your composable development environment.",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2024-08-20T10:04:34.875Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "“Boost Your Django DX” Released",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add post",
+    "content_type": 7,
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change post",
+    "content_type": 7,
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete post",
+    "content_type": 7,
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view post",
+    "content_type": 7,
+    "codename": "view_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add comment",
+    "content_type": 8,
+    "codename": "add_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change comment",
+    "content_type": 8,
+    "codename": "change_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete comment",
+    "content_type": 8,
+    "codename": "delete_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view comment",
+    "content_type": 8,
+    "codename": "view_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add tag",
+    "content_type": 9,
+    "codename": "add_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change tag",
+    "content_type": 9,
+    "codename": "change_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete tag",
+    "content_type": 9,
+    "codename": "delete_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view tag",
+    "content_type": 9,
+    "codename": "view_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add tagged item",
+    "content_type": 10,
+    "codename": "add_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change tagged item",
+    "content_type": 10,
+    "codename": "change_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete tagged item",
+    "content_type": 10,
+    "codename": "delete_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view tagged item",
+    "content_type": 10,
+    "codename": "view_taggeditem"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$KdZomDXY3BRnzACF9ArRAe$jEVseunyYEE0cOjRlvXE7GVKpoyMCFUSW5aEkOdOnQg=",
+    "last_login": "2024-08-16T08:07:40.963Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-08-12T11:22:03.123Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "blogger",
+    "model": "post"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "blogger",
+    "model": "comment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "taggit",
+    "model": "tag"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "taggit",
+    "model": "taggeditem"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "sp0b4ektvryt3zm0mmx1h10r408q3iea",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hCGIlNcuu8ZyEwZpGpoUtqV8e7apAvd_vfef6lI21ri1mSJU1IXBer0uzGND6k7SHeqt1mPc12XifWu6IM2PcxJntfD_Tso1Mq3JiLhHBwxeJAOjHFy9mwdhpTYsffgxKAzocvWG-wh2J4RUBAN26zeH-WANzY:1serzo:8LUMosG2e-fuCvvvrqNpfyD6Me5AMLvS8NDjwqQHH2o",
+    "expire_date": "2024-08-30T08:07:40.970Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "x43hc81jmxpyi7ih5izn5c0dlw6m01r2",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hCGIlNcuu8ZyEwZpGpoUtqV8e7apAvd_vfef6lI21ri1mSJU1IXBer0uzGND6k7SHeqt1mPc12XifWu6IM2PcxJntfD_Tso1Mq3JiLhHBwxeJAOjHFy9mwdhpTYsffgxKAzocvWG-wh2J4RUBAN26zeH-WANzY:1sdT8a:2sHqBf2bt-wFC7NtOd0q-a647GSz_Vr-Mkef7YZGgyA",
+    "expire_date": "2024-08-26T11:22:56.171Z"
+  }
+},
+{
+  "model": "blogger.post",
+  "pk": 1,
+  "fields": {
+    "title": "Njura | Memory Beta, non-canon Star Trek Wiki | Fandom",
+    "slug": "njura-memory",
+    "body": "Njura is a planet located in the galaxy's Alpha or Beta Quadrant. It is the largest inhabited planet in its star system and the homeworld of the advanced Njuran civilization. Njura features two very large islands and four continents, three of which contact its equator.",
+    "publish": "2024-08-12T11:28:31Z",
+    "created": "2024-08-12T11:29:24.302Z",
+    "updated": "2024-08-12T11:29:24.302Z",
+    "status": "DF",
+    "author": 1
+  }
+},
+{
+  "model": "blogger.post",
+  "pk": 2,
+  "fields": {
+    "title": "Another post",
+    "slug": "another-post",
+    "body": "post body",
+    "publish": "2024-08-12T11:51:42.499Z",
+    "created": "2024-08-12T11:51:50.753Z",
+    "updated": "2024-08-12T11:51:50.753Z",
+    "status": "DF",
+    "author": 1
+  }
+},
+{
+  "model": "blogger.post",
+  "pk": 3,
+  "fields": {
+    "title": "Mastery (book)",
+    "slug": "mastery-book",
+    "body": "Mastery is the fifth book by the American author Robert Greene.[1] The book examines the lives of historical figures such as Charles Darwin and Henry Ford, as well as the lives of contemporary leaders such as Paul Graham, Temple Grandin, Teresita Fernández, Yoky Matsuoka and Freddie Roach, and examines what led to their success.[2][3][4] The book was published on November 13, 2012 by Viking Adult.",
+    "publish": "2024-08-16T08:07:44Z",
+    "created": "2024-08-16T08:12:49.163Z",
+    "updated": "2024-08-16T08:12:49.163Z",
+    "status": "DF",
+    "author": 1
+  }
+},
+{
+  "model": "blogger.post",
+  "pk": 4,
+  "fields": {
+    "title": "Origins book",
+    "slug": "origins-book",
+    "body": "The book originated from a realization that Greene reached while writing and researching his previous books; Greene concluded that the people he studied had similar paths to success.[5] After finishing The 50th Law, Greene focused on this concept in writing Mastery.[5][6]",
+    "publish": "2024-08-16T08:12:59Z",
+    "created": "2024-08-16T08:13:33.964Z",
+    "updated": "2024-08-16T08:13:33.964Z",
+    "status": "DF",
+    "author": 1
+  }
+},
+{
+  "model": "blogger.post",
+  "pk": 5,
+  "fields": {
+    "title": "Synopsis book",
+    "slug": "synopsis-book",
+    "body": "Mastery explains how to become successful by examining the lives of historical figures such as Wolfgang Amadeus Mozart and Albert Einstein, as well as through Greene's interviews with contemporary figures such as Teresita Fernández, Cesar Rodriguez, and Daniel Everett.[2][7][8][9]",
+    "publish": "2024-08-16T08:13:34Z",
+    "created": "2024-08-16T08:14:13.787Z",
+    "updated": "2024-08-16T08:14:13.787Z",
+    "status": "DF",
+    "author": 1
+  }
+},
+{
+  "model": "blogger.post",
+  "pk": 6,
+  "fields": {
+    "title": "Work Experience",
+    "slug": "work-experience",
+    "body": "Focus on achievements and impact, rather than just listing job responsibilities\r\nQuantify results wherever possible (e.g., “Improved data processing time by 30%”)\r\nHighlight collaboration, problem-solving, and communication skills",
+    "publish": "2024-08-16T08:14:13Z",
+    "created": "2024-08-16T08:14:55.493Z",
+    "updated": "2024-08-16T08:14:55.493Z",
+    "status": "DF",
+    "author": 1
+  }
+},
+{
+  "model": "blogger.post",
+  "pk": 7,
+  "fields": {
+    "title": "Focus on achievements and impact, rather than just listing job responsibilities Quantify results wherever possible (e.g., “Improved data processing time by 30%”) Highlight collaboration, problem-solving, and communication skills",
+    "slug": "focus-on-achievements-and-impact-rather-than-just-listing-job-responsibilities-quantify-results-wherever-possible-eg-improved-data-processing-time-by-30-highlight-collaboration-problem-solving-and-communication-skills",
+    "body": "Mastery reached #6 on The New York Times Bestseller list and was featured in The New York Times, CNN Money, The Huffington Post, Business Insider, Forbes, Management Today, and Fast Company.[1][4][7][10][11][12][13][14][15][16]",
+    "publish": "2024-08-16T08:14:55Z",
+    "created": "2024-08-16T08:15:33.972Z",
+    "updated": "2024-08-16T08:15:33.972Z",
+    "status": "DF",
+    "author": 1
+  }
+},
+{
+  "model": "blogger.post",
+  "pk": 8,
+  "fields": {
+    "title": "Adding full-text search to the blog",
+    "slug": "adding-full-text-search-to-the-blog",
+    "body": "Next, we will add search capabilities to the blog. Searching for data in the database with user input\r\nis a common task for web applications. The Django ORM allows you to perform simple matching operations\r\nusing, for example, the contains filter (or its case-insensitive version, icontains). You can\r\nuse the following query to find posts that contain the word framework in their body:",
+    "publish": "2024-08-20T07:57:46Z",
+    "created": "2024-08-20T07:58:14.441Z",
+    "updated": "2024-08-20T07:58:14.441Z",
+    "status": "DF",
+    "author": 1
+  }
+},
+{
+  "model": "blogger.post",
+  "pk": 9,
+  "fields": {
+    "title": "Installation",
+    "slug": "installation",
+    "body": "If you aren’t familiar with pip, you may also obtain a copy of the debug_toolbar directory and add it to your Python path.\r\n\r\nTo test an upcoming release, yo",
+    "publish": "2024-08-20T07:59:58Z",
+    "created": "2024-08-20T08:00:26.567Z",
+    "updated": "2024-08-20T08:00:26.567Z",
+    "status": "DF",
+    "author": 1
+  }
+},
+{
+  "model": "blogger.post",
+  "pk": 10,
+  "fields": {
+    "title": "Your composable development environment.",
+    "slug": "your-composable-development-environment",
+    "body": "During my years working with Django, I’ve picked up many tools and techniques to boost my Developer Experience, or DX. This book covers as many of these as possible, so you can learn them too!",
+    "publish": "2024-08-20T10:03:40Z",
+    "created": "2024-08-20T10:04:02.065Z",
+    "updated": "2024-08-20T10:04:02.065Z",
+    "status": "DF",
+    "author": 1
+  }
+},
+{
+  "model": "blogger.post",
+  "pk": 11,
+  "fields": {
+    "title": "“Boost Your Django DX” Released",
+    "slug": "boost-your-django-dx-released",
+    "body": "Many thanks to the 188 people who preordered: you should all receive an email from Gumroad. If you didn’t preorder, you can buy now at full price. It’s $39 for an individual license, with higher tiers for team licenses. It comes as a watermarked PDF, an ePub, an AZW3 (Kindle), and a zip file of resources.",
+    "publish": "2024-08-20T10:04:02Z",
+    "created": "2024-08-20T10:04:34.863Z",
+    "updated": "2024-08-20T10:04:34.863Z",
+    "status": "DF",
+    "author": 1
+  }
+},
+{
+  "model": "blogger.comment",
+  "pk": 1,
+  "fields": {
+    "post": 7,
+    "name": "dave ochieng",
+    "email": "sheilla2525w2@gmail.com",
+    "created": "2024-08-18T07:05:44.573Z",
+    "updated": "2024-08-18T07:05:44.574Z",
+    "active": true,
+    "body": "this is the comment"
+  }
+},
+{
+  "model": "blogger.comment",
+  "pk": 2,
+  "fields": {
+    "post": 7,
+    "name": "dave ochieng",
+    "email": "ochiengogori@gmail.com",
+    "created": "2024-08-18T07:07:39.466Z",
+    "updated": "2024-08-18T07:07:39.466Z",
+    "active": true,
+    "body": "the real comment"
+  }
+},
+{
+  "model": "blogger.comment",
+  "pk": 3,
+  "fields": {
+    "post": 5,
+    "name": "DevOps beginer Talk",
+    "email": "sheilla2525w2@gmail.com",
+    "created": "2024-08-18T07:15:36.356Z",
+    "updated": "2024-08-18T07:15:36.356Z",
+    "active": true,
+    "body": "this is book ysnopsis is amazing"
+  }
+},
+{
+  "model": "blogger.comment",
+  "pk": 4,
+  "fields": {
+    "post": 6,
+    "name": "omondi",
+    "email": "davisochieng4@gmail.com",
+    "created": "2024-08-18T07:41:30.566Z",
+    "updated": "2024-08-18T07:41:30.566Z",
+    "active": true,
+    "body": "Take one of the diverse career and development opportunities in Germany using your professional abilities and creativity! In 2020, more than 86,000 job positions in the IT sector remained vacant. Experienced or qualified IT specialists can therefore hope for attractive jobs in small and medium-sized enterprises, in the manufacturing industry or in large international companies. Specialists in the following fields are particularly in demand:"
+  }
+},
+{
+  "model": "blogger.comment",
+  "pk": 5,
+  "fields": {
+    "post": 7,
+    "name": "Nyayo",
+    "email": "rugadewa20@gmail.com",
+    "created": "2024-08-18T08:03:10.971Z",
+    "updated": "2024-08-18T08:03:10.971Z",
+    "active": true,
+    "body": "From the preparatory stage to completing the application forms: this step-by-step guide shows you how to obtain a job search opportunity card."
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 1,
+  "fields": {
+    "name": "Music",
+    "slug": "music"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 2,
+  "fields": {
+    "name": "django",
+    "slug": "django"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 3,
+  "fields": {
+    "name": "python",
+    "slug": "python"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 4,
+  "fields": {
+    "name": "tools",
+    "slug": "tools"
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 1,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 2,
+  "fields": {
+    "tag": 2,
+    "content_type": 7,
+    "object_id": 8
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 3,
+  "fields": {
+    "tag": 3,
+    "content_type": 7,
+    "object_id": 8
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 4,
+  "fields": {
+    "tag": 4,
+    "content_type": 7,
+    "object_id": 9
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 5,
+  "fields": {
+    "tag": 2,
+    "content_type": 7,
+    "object_id": 10
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 6,
+  "fields": {
+    "tag": 3,
+    "content_type": 7,
+    "object_id": 10
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 7,
+  "fields": {
+    "tag": 2,
+    "content_type": 7,
+    "object_id": 11
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 8,
+  "fields": {
+    "tag": 3,
+    "content_type": 7,
+    "object_id": 11
+  }
+}
+]

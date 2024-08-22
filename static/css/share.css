@@ -1,0 +1,40 @@
+.share{
+    margin-top: 3rem;
+}
+.share_title{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+label{
+    display: block;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+input:not([type="submit"]){
+    padding: 0.5rem;
+    width: 70%;
+    color: #1D3557;
+    font-size: 1rem;
+    
+}
+
+#id_comments{
+    width: 70%;
+    border: none;
+    outline: none;
+    color: #1D3557;
+    font-size: 1rem;
+    padding: 0.5rem;
+    
+}
+
+input[type="submit"]{
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 1.5rem;
+    background-color: #1D3557;
+}
+input[type="submit"]:hover{
+    background-color: #105ac2;
+}

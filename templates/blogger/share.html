@@ -1,11 +1,22 @@
 {% extends 'base.html' %}
+{% load static %}
 
-{% block title %}Share {% endblock %}
+{% block title %}
+Share Post Via email
+{% endblock %}
+
+{% block style %}
+
+<link rel="stylesheet" href="{% static 'css/share.css' %}"/>
+{% endblock %}
+
+
 {% block all_posts %}
-<div>
+<div class="share">
+    <h3 class="share_title">Share this post with someone via email</h3>
     <form method="POST" novalidate> {% csrf_token %}
         {{form.as_p}}
-        <button type="submit">Share</button>
+        <input type="submit" value="Share"/>
     </form>
 
 </div>

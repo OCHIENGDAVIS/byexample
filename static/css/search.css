@@ -1,0 +1,67 @@
+.search{
+    
+}
+.search input[type='text']{
+    padding: 1rem 0.5rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+}
+.search_title{
+    font-size: 2rem;
+    margin-bottom: 1rem ;
+}
+.search label{
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: block;
+}
+
+.search input[type='submit']{
+
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: #1D3557;
+    
+}
+.search input[type='submit']:hover{
+    background-color: #105ac2;
+    color: #fff;
+}
+
+.post{
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #1D3557;
+}
+.post a{
+    color: #1D3557;
+}
+.post a:hover{
+    color: #105ac2;
+}
+
+
+.search_result{
+    margin-top: 1rem;
+}
+
+.search_results_title{
+    margin-bottom: 4rem;
+}
+
+.another_search{
+    display: inline-block;
+    padding: 1rem 1rem;
+    background-color: #1D3557;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    color: #fff !important;
+   
+}
+
+
+.another_search:hover{
+    background-color: #105ac2;
+}

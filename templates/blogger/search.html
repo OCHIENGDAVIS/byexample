@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Search 
+{% endblock %}
+ 
+{% block style %}
+    <link rel="stylesheet"  href="{% static 'css/search.css' %}"/>
+{% endblock %}
+
+{% block all_posts %}
+    {% if query %}
+    <div class="search_result">
+        <h3 class="search_results_title">Posts containing <code> "{{query}}"</code></h3>
+
+        {% for post in results %}
+            <div class="post">
+                <a href="{{post.get_absolute_url}}">{{post.title}}</a>
+            </div>
+            
+        {% empty %}
+        <p>No post matches your query</p>
+        
+        <a id="another_search" class="another_search" href="{% url 'blogger:post_search' %}">Perform another search </a>
+        
+        {% endfor %}
+
+    </div>
+    {% else %}
+    <div class="search">
+        <h3 class="search_title">Seach Your Post </h3>
+        <form class="search form"> {% csrf_token  %}
+            {{form.as_p}}
+            <input class="search_button"  type="submit" value="Search "/>
+        </form>
+    </div>
+    {% endif %}
+    
+{% endblock %}
